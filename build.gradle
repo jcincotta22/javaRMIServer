@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+group 'javaRMIServer'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile files('/Users/jcincotta/zipcar/javaRMI/build/libs/javaRMI-1.0-SNAPSHOT.jar')
+//    compile files('/Users/jcincotta/zipcar/javaRMI/build/libs/javaRMIClient-1.0-SNAPSHOT.jar')
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
